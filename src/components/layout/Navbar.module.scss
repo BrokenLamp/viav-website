@@ -1,0 +1,49 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+
+    a {
+        color: black;
+        padding: 15px;
+        position: relative;
+        font-size: 12px;
+
+        &.brand {
+            font-weight: 600;
+            font-size: 20px;
+            padding: 0 20px;
+        }
+
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 15px;
+            right: 15px;
+            background: #ffffff00;
+            -webkit-box-shadow: 0 -4px 12px 0 #ffffff00;
+            box-shadow: 0 -4px 12px 0 #ffffff00;
+            content: "";
+            height: 2px;
+            -webkit-transition: -webkit-transform 0.125s;
+            transition: -webkit-transform 0.125s;
+            transition: transform 0.125s;
+            transition: transform 0.125s, -webkit-transform 0.125s;
+        }
+
+        &.active::after {
+            background: var(--primary);
+            -webkit-box-shadow: 0 -4px 12px 0 var(--primary);
+            box-shadow: 0 -4px 12px 0 var(--primary);
+        }
+    }
+
+    .separator {
+        flex: 1;
+    }
+}
