@@ -1,7 +1,7 @@
 .morph {
     border-radius: 50px;
     padding: 40px 50px;
-    background: var(--background);
+    background-color: var(--background);
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
 
@@ -17,4 +17,10 @@
 
 .glowy-link {
     text-shadow: 4px 4px 15px var(--primary);
+}
+
+.morph.hoverable:hover {
+    box-shadow: inset 7px 7px 13px #58319c, inset -7px -7px 13px #7643d2;
+    color: #e0e0e0;
+    background-color: var(--primary);
 }

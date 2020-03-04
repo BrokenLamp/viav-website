@@ -3,41 +3,41 @@
     flex-direction: row;
     align-items: center;
     padding: 10px 20px;
+    background: linear-gradient(var(--background), transparent);
     position: absolute;
     top: 0;
     left: 10%;
     right: 10%;
+    backdrop-filter: blur(10px);
+    z-index: 999;
 
     a {
         color: black;
         padding: 15px;
         position: relative;
         font-size: 12px;
+        font-weight: 300;
 
         &.brand {
             font-weight: 600;
             font-size: 20px;
-            padding: 0 20px;
         }
 
         &::after {
             position: absolute;
             bottom: 0;
-            left: 15px;
-            right: 15px;
-            background: #ffffff00;
+            left: 20px;
+            right: 20px;
+            background-color: #ffffff00;
             -webkit-box-shadow: 0 -4px 12px 0 #ffffff00;
             box-shadow: 0 -4px 12px 0 #ffffff00;
             content: "";
             height: 2px;
-            -webkit-transition: -webkit-transform 0.125s;
-            transition: -webkit-transform 0.125s;
-            transition: transform 0.125s;
-            transition: transform 0.125s, -webkit-transform 0.125s;
+            transition: background-color 0.125s, box-shadow 0.23s;
         }
 
         &.active::after {
-            background: var(--primary);
+            background-color: var(--primary);
             -webkit-box-shadow: 0 -4px 12px 0 var(--primary);
             box-shadow: 0 -4px 12px 0 var(--primary);
         }

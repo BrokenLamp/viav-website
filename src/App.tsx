@@ -1,34 +1,27 @@
 import React from "react";
-import logo from "./logo.png";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/layout/Navbar";
 
+import Features from "./pages/Features";
+import Home from "./pages/Home";
+
 function App() {
     return (
-        <div className="App">
-            <Navbar />
-            <header className="App-header">
-                <div className="morph inset App-logo-container">
-                    <img src={logo} className="App-logo" />
+        <Router>
+            <div className="App">
+                <Navbar />
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/features" component={Features} />
+                </Switch>
+                <div className="App-made-with-heart">
+                    Made with
+                    <span className="App-made-with-heart__heart"> ♥️ </span>
+                    by Broken Lamp
                 </div>
-                <h2>The Ultimate Voice Channel Upgrade</h2>
-                <p>
-                    Viav is an open source bot aimed at changing the way we use
-                    Discord.
-                    <br />
-                    <br />
-                    <br />
-                </p>
-                <a
-                    className="App-link morph small glowy-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <strong>Add Viav</strong>
-                </a>
-            </header>
-        </div>
+            </div>
+        </Router>
     );
 }
 

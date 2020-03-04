@@ -1,0 +1,18 @@
+.add {
+    > h3 {
+        position: relative;
+        padding: 12px;
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 30px;
+            right: 30px;
+            content: "";
+            height: 1px;
+            transition: background-color 0.125s, box-shadow 0.23s;
+            background-color: var(--primary);
+            -webkit-box-shadow: 0 -4px 12px 0 var(--primary);
+            box-shadow: 0 -4px 12px 0 var(--primary);
+        }
+    }
+}

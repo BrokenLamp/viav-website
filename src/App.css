@@ -1,6 +1,7 @@
 .App {
     background-color: var(--background);
     min-height: 100vh;
+    max-height: 100vh;
     text-align: center;
     position: relative;
     display: flex;
@@ -8,6 +9,7 @@
     align-items: center;
     justify-content: center;
     color: black;
+    overflow-y: auto;
 }
 
 .App-logo {
@@ -26,22 +28,29 @@
     }
 }
 
-.App-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: black;
+a {
+    color: var(--primary);
+    font-weight: 700;
 }
 
-.App-link {
+.App-made-with-heart {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #0008;
+    font-size: 11px;
+    padding: 5px 10px;
+}
+
+.App-made-with-heart__heart {
     color: var(--primary);
+    font-size: 15px;
 }
 
 @keyframes App-logo-spin {
     0%,
     100% {
-        transform: translateY(6px) rotate(0.01deg);
+        transform: translateY(10px) rotate(0.01deg);
     }
     50% {
         transform: translateY(-6px) rotate(0.01deg);
