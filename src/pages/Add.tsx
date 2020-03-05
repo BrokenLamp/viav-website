@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Features.module.scss";
+import styles from "./Add.module.scss";
 import data from "../data.json";
 
 export default () => {
@@ -12,11 +12,11 @@ export default () => {
             <br />
             <a
                 href={data.invite_link}
-                className="morph small hoverable glowy-link"
+                className="morph small btn"
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                Add Viav
+                Add to Discord
             </a>
         </div>
     );

@@ -6,11 +6,35 @@
     color: black;
     height: 100%;
 
+    .logo {
+        height: 20vmin;
+        max-height: 250px;
+        pointer-events: none;
+        opacity: 0.97;
+        filter: drop-shadow(20px 20px 15px #7e4cd462);
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+        .logo {
+            animation: App-logo-spin infinite 6s ease-in-out;
+        }
+    }
+
     .buttons {
         display: flex;
         flex-direction: row;
         & > * {
             margin: 0px 20px;
         }
+    }
+}
+
+@keyframes App-logo-spin {
+    0%,
+    100% {
+        transform: translateY(10px) rotate(0.01deg);
+    }
+    50% {
+        transform: translateY(-6px) rotate(0.01deg);
     }
 }

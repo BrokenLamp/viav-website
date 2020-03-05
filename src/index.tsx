@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import "./neumorphism.css";
+import "./neumorphism.scss";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 

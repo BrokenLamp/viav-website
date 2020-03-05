@@ -12,20 +12,8 @@
     overflow-y: auto;
 }
 
-.App-logo {
-    height: 20vmin;
-    pointer-events: none;
-    filter: drop-shadow(20px 20px 15px #bebebe);
-}
-
 .App-logo-container {
     margin-bottom: 60px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 6s ease-in-out;
-    }
 }
 
 a {
@@ -45,14 +33,4 @@ a {
 .App-made-with-heart__heart {
     color: var(--primary);
     font-size: 15px;
-}
-
-@keyframes App-logo-spin {
-    0%,
-    100% {
-        transform: translateY(10px) rotate(0.01deg);
-    }
-    50% {
-        transform: translateY(-6px) rotate(0.01deg);
-    }
 }

@@ -26,20 +26,30 @@
         &::after {
             position: absolute;
             bottom: 0;
-            left: 20px;
-            right: 20px;
+            left: 50%;
+            right: 50%;
             background-color: #ffffff00;
             -webkit-box-shadow: 0 -4px 12px 0 #ffffff00;
             box-shadow: 0 -4px 12px 0 #ffffff00;
             content: "";
             height: 2px;
-            transition: background-color 0.125s, box-shadow 0.23s;
+            transition: background-color 0.125s, box-shadow 0.23s, left 0.125s, right 0.125s;
+        }
+
+        &:hover::after {
+            background-color: var(--primary);
+            -webkit-box-shadow: 0 -4px 12px 0 var(--primary);
+            box-shadow: 0 -4px 12px 0 var(--primary);
+            left: 40%;
+            right: 40%;
         }
 
         &.active::after {
             background-color: var(--primary);
             -webkit-box-shadow: 0 -4px 12px 0 var(--primary);
             box-shadow: 0 -4px 12px 0 var(--primary);
+            left: 30%;
+            right: 30%;
         }
     }
 

@@ -22,12 +22,15 @@ export default () => {
             >
                 Features
             </Link>
-            <a
-                href={data.invite_link}
+            <Link
+                to="/add"
                 className={pathname === "/add" ? styles.active : ""}
             >
                 Add Viav
-            </a>
+            </Link>
+
+            <div className={styles.separator} />
+
             <a
                 href="https://discord.gg/dd4pE7e"
                 target="_blank"
@@ -35,7 +38,6 @@ export default () => {
             >
                 Community
             </a>
-            <div className={styles.separator} />
             <a
                 href="https://patreon.com/brokenlamp"
                 target="_blank"

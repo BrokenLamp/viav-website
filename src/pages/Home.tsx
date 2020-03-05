@@ -8,7 +8,7 @@ export default () => {
     return (
         <div className={styles.home}>
             <div className="morph inset App-logo-container">
-                <img src={logo} className="App-logo" />
+                <img src={logo} className={styles.logo} />
             </div>
             <h2>Discord Infinite Voice Channels</h2>
             <p>
@@ -18,17 +18,17 @@ export default () => {
                 <br />
             </p>
             <div className={styles.buttons}>
-                <a
-                    className="App-link morph small glowy-link hoverable"
-                    href={data.invite_link}
-                >
-                    <strong>Add Viav</strong>
-                </a>
                 <Link
-                    className="App-link morph small glowy-link hoverable"
+                    className="morph small btn hoverable"
+                    to="/add"
+                >
+                    Add Viav
+                </Link>
+                <Link
+                    className="morph small btn hoverable"
                     to="/features"
                 >
-                    <strong>Features</strong>
+                    Features
                 </Link>
             </div>
         </div>
