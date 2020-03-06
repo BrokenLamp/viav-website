@@ -35,6 +35,7 @@ export default () => {
                 href="https://discord.gg/dd4pE7e"
                 target="_blank"
                 rel="noopener noreferrer"
+                className={styles.right}
             >
                 Community
             </a>
@@ -42,6 +43,7 @@ export default () => {
                 href="https://patreon.com/brokenlamp"
                 target="_blank"
                 rel="noopener norefer"
+                className={styles.right}
             >
                 Donate
             </a>
@@ -49,6 +51,7 @@ export default () => {
                 href="https://github.com/BrokenLamp/viav"
                 target="_blank"
                 rel="noopener noreferrer"
+                className={styles.right}
             >
                 GitHub
             </a>

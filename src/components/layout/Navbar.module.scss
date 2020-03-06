@@ -33,7 +33,8 @@
             box-shadow: 0 -4px 12px 0 #ffffff00;
             content: "";
             height: 2px;
-            transition: background-color 0.125s, box-shadow 0.23s, left 0.125s, right 0.125s;
+            transition: background-color 0.125s, box-shadow 0.23s, left 0.125s,
+                right 0.125s;
         }
 
         &:hover::after {
@@ -55,5 +56,15 @@
 
     .separator {
         flex: 1;
+    }
+
+    @media screen and (max-width: 650px) {
+        justify-content: center;
+        left: 0;
+        right: 0;
+        .right,
+        .separator {
+            display: none;
+        }
     }
 }

@@ -7,7 +7,11 @@ import data from "../data.json";
 export default () => {
     return (
         <div className={styles.home}>
-            <div className="morph inset App-logo-container">
+            <div
+                className={
+                    styles.logoContainer + " morph inset App-logo-container"
+                }
+            >
                 <img src={logo} className={styles.logo} />
             </div>
             <h2>Discord Infinite Voice Channels</h2>
@@ -18,16 +22,10 @@ export default () => {
                 <br />
             </p>
             <div className={styles.buttons}>
-                <Link
-                    className="morph small btn hoverable"
-                    to="/add"
-                >
+                <Link className="morph small btn hoverable" to="/add">
                     Add Viav
                 </Link>
-                <Link
-                    className="morph small btn hoverable"
-                    to="/features"
-                >
+                <Link className="morph small btn hoverable" to="/features">
                     Features
                 </Link>
             </div>

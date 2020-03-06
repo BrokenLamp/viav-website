@@ -5,6 +5,16 @@
     justify-content: center;
     color: black;
     height: 100%;
+    padding: 20px;
+
+    .logoContainer {
+        @media screen and (max-height: 610px) {
+            display: none;
+        }
+        @media screen and (max-width: 500px) {
+            display: none;
+        }
+    }
 
     .logo {
         height: 20vmin;
@@ -12,10 +22,8 @@
         pointer-events: none;
         opacity: 0.97;
         filter: drop-shadow(20px 20px 15px #7e4cd462);
-    }
 
-    @media (prefers-reduced-motion: no-preference) {
-        .logo {
+        @media (prefers-reduced-motion: no-preference) {
             animation: App-logo-spin infinite 6s ease-in-out;
         }
     }
@@ -25,6 +33,12 @@
         flex-direction: row;
         & > * {
             margin: 0px 20px;
+        }
+        @media screen and (max-width: 370px) {
+            flex-direction: column;
+            & > * {
+                margin: 20px 0px;
+            }
         }
     }
 }
