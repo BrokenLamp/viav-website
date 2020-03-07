@@ -37,18 +37,19 @@
                 right 0.125s;
         }
 
-        &:hover::after {
+        &:hover::after,
+        &.active::after {
             background-color: var(--primary);
             -webkit-box-shadow: 0 -4px 12px 0 var(--primary);
             box-shadow: 0 -4px 12px 0 var(--primary);
+        }
+
+        &:hover::after {
             left: 40%;
             right: 40%;
         }
 
         &.active::after {
-            background-color: var(--primary);
-            -webkit-box-shadow: 0 -4px 12px 0 var(--primary);
-            box-shadow: 0 -4px 12px 0 var(--primary);
             left: 30%;
             right: 30%;
         }
@@ -64,6 +65,12 @@
         right: 0;
         .right,
         .separator {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 740px) {
+        .roadmap {
             display: none;
         }
     }

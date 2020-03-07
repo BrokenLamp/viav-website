@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Home.module.scss";
-import logo from "../logo.png";
-import data from "../data.json";
+import logo from "../../logo.png";
 
 export default () => {
     return (
@@ -12,7 +11,7 @@ export default () => {
                     styles.logoContainer + " morph inset App-logo-container"
                 }
             >
-                <img src={logo} className={styles.logo} />
+                <img src={logo} className={styles.logo} alt="logo" />
             </div>
             <h2>Discord Infinite Voice Channels</h2>
             <p>

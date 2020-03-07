@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Add.module.scss";
-import data from "../data.json";
+import data from "../../data.json";
 
 export default () => {
     return (

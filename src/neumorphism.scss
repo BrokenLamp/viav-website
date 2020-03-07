@@ -1,26 +1,31 @@
+$shadow-dark: #cfcfcf;
+$shadow-light: #ffffff;
 .morph {
-    $shadow-dark: #cfcfcf;
-    $shadow-light: #ffffff;
     border-radius: 50px;
     padding: 40px 50px;
     background-color: var(--background);
     box-shadow: 20px 20px 50px $shadow-dark, -20px -20px 50px $shadow-light;
     border: 1px solid #fff8;
 
+    &.inset {
+        box-shadow: inset 20px 20px 50px $shadow-dark,
+            inset -20px -20px 50px $shadow-light;
+    }
+
     &.small {
         border-radius: 25px;
         padding: 20px 25px;
-        box-shadow: 12px 12px 25px $shadow-dark, -12px -12px 25px $shadow-light;
-    }
-
-    &.inset {
-        box-shadow: inset 20px 20px 50px $shadow-dark, inset -20px -20px 50px $shadow-light;
+        box-shadow: 8px 8px 16px $shadow-dark, -8px -8px 16px $shadow-light;
+        &.inset {
+            box-shadow: inset 8px 8px 16px $shadow-dark,
+                inset -8px -8px 16px $shadow-light;
+        }
     }
 
     &.btn {
         font-weight: 700;
         &:hover {
-            box-shadow: 8px 8px 20px $shadow-dark, -8px -8px 20px $shadow-light;
+            box-shadow: 4px 4px 8px $shadow-dark, -4px -4px 8px $shadow-light;
         }
         &:active {
             box-shadow: inset 7px 7px 13px #58319c, inset -7px -7px 13px #7643d2;

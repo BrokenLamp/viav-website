@@ -1,7 +1,6 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
 import styles from "./Navbar.module.scss";
-import data from "../../data.json";
 
 export default () => {
     const pathname = useLocation().pathname;
@@ -28,6 +27,16 @@ export default () => {
             >
                 Add Viav
             </Link>
+            <Link
+                to="/roadmap"
+                className={
+                    styles.roadmap +
+                    " " +
+                    (pathname === "/roadmap" ? styles.active : "")
+                }
+            >
+                Roadmap
+            </Link>
 
             <div className={styles.separator} />
 
@@ -42,7 +51,7 @@ export default () => {
             <a
                 href="https://patreon.com/brokenlamp"
                 target="_blank"
-                rel="noopener norefer"
+                rel="noopener noreferrer"
                 className={styles.right}
             >
                 Donate
