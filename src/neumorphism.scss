@@ -22,6 +22,12 @@ $shadow-light: #ffffff;
         }
     }
 
+    &.tiny {
+        border-radius: 8px;
+        padding: 8px 20px;
+        box-shadow: 4px 4px 8px $shadow-dark, -4px -4px 8px $shadow-light;
+    }
+
     &.btn {
         font-weight: 700;
         &:hover {

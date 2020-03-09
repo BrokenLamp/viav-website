@@ -1,0 +1,23 @@
+@import "../../../neumorphism.scss";
+
+.commands {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .command {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        > span:first-child {
+            text-align: left;
+            width: 180px;
+            color: var(--primary);
+            > span {
+                font-weight: bold;
+            }
+        }
+        > span:last-child {
+            text-shadow: 3px 3px 3px #0004;
+        }
+    }
+}

@@ -9,18 +9,26 @@ import {
 import Helmet from "react-helmet";
 import styles from "./Features.module.scss";
 
+import Commands from "./Commands";
 import InfiniteChannels from "./InfiniteChannels";
-// import TextChannels from "./TextChannels";
 // import ControlDeck from "./ControlDeck";
 
 const tabs = [
-    { title: "Voice Channels", uri: "", component: InfiniteChannels },
     {
-        title: "Text Channels",
-        uri: "/text-channels",
+        title: "Voice Channels",
+        uri: "",
         component: InfiniteChannels
     },
-    { title: "Control Deck", uri: "/control-deck", component: InfiniteChannels }
+    {
+        title: "Control Deck",
+        uri: "/control-deck",
+        component: InfiniteChannels
+    },
+    {
+        title: "Commands",
+        uri: "/commands",
+        component: Commands
+    }
 ];
 
 export default () => {
