@@ -1,16 +1,20 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Helmet from "react-helmet";
 import "./App.css";
 import Navbar from "./components/layout/Navbar";
 
 import Add from "./components/pages/Add";
-import Features from "./components/pages/Features";
+import Features from "./components/pages/Features/";
 import Home from "./components/pages/Home";
 import Roadmap from "./components/pages/Roadmap";
 
 function App() {
     return (
         <Router>
+            <Helmet>
+                <title>Viav - Automatic Voice Channels</title>
+            </Helmet>
             <div className="App">
                 <Navbar />
                 <Switch>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Helmet from "react-helmet";
 import styles from "./Roadmap.module.scss";
 import Issue from "../../models/Issue";
 
@@ -58,5 +59,12 @@ export default () => {
             })
             .then(data => setData(data));
     }, []);
-    return <div className={styles.roadmap}>{data || "Loading"}</div>;
+    return (
+        <div className={styles.roadmap}>
+            <Helmet>
+                <title>Viav - Roadmap</title>
+            </Helmet>
+            {data || "Loading"}
+        </div>
+    );
 };

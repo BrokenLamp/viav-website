@@ -1,0 +1,42 @@
+@import "../../../neumorphism.scss";
+
+.infiniteChannels {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    .channel,
+    .user {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 5px;
+        padding: 5px 20px;
+        span:nth-child(1) {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    }
+    .channel {
+        border-radius: 5px;
+        box-shadow: 4px 4px 8px $shadow-dark, -4px -4px 8px $shadow-light;
+    }
+    .user {
+        padding-left: 40px;
+        font-weight: 600;
+        text-shadow: 2px 2px 3px #0005;
+        span:nth-child(1) {
+            img {
+                width: 25px;
+                height: 25px;
+                min-width: 25px;
+                padding: 0px;
+                box-shadow: 4px 4px 8px $shadow-dark,
+                    -4px -4px 8px $shadow-light;
+            }
+        }
+    }
+    .hr {
+        border-top: 1px solid #673ab744;
+        margin: 8px 15px;
+    }
+}
