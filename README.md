@@ -1,3 +1,13 @@
+# Viav Website
+
+![image](https://user-images.githubusercontent.com/12021069/76234353-9e5e0680-61f7-11ea-8fb9-c0ae2b480a96.png)
+
+The new Viav site experiments with the new Neumorphism design language.
+
+See the site at https://viav.app.
+
+The old site is available at https://BrandonDyer64.github.io/ViavSite/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
