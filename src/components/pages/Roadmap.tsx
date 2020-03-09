@@ -57,7 +57,8 @@ export default () => {
                         );
                     });
             })
-            .then(data => setData(data));
+            .then(data => setData(data))
+            .catch(() => setData(() => <div>Failed to load roadmap</div>));
     }, []);
     return (
         <div className={styles.roadmap}>

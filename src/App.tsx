@@ -7,6 +7,7 @@ import Navbar from "./components/layout/Navbar";
 import Add from "./components/pages/Add";
 import Features from "./components/pages/Features/";
 import Home from "./components/pages/Home";
+import NotFound from "./components/pages/NotFound";
 import Roadmap from "./components/pages/Roadmap";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
                     <Route path="/add" component={Add} />
                     <Route path="/features" component={Features} />
                     <Route path="/roadmap" component={Roadmap} />
+                    <Route path="*" component={NotFound} />
                 </Switch>
                 <div className="App-made-with-heart">
                     Made with
